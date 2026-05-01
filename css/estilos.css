@@ -184,3 +184,72 @@ footer ul {
 
 /*** Responsive */
 
+/*  Tablet (768px) */
+@media (max-width: 768px) {
+    
+    #card-section > div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; 
+        margin: 15px 0;
+    }
+
+    /* de fila a columna */
+    section > div {
+        flex-direction: column-reverse; 
+    }
+
+    .formulario, .contacto {
+        width: 100%;
+        text-align: center; 
+        padding: 15px 0;
+    }
+
+    /* de fila a columna */
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer > div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/*  para Celu (450px) */
+@media (max-width: 450px) {
+    section, footer {
+        padding: 20px; 
+    }
+
+    h2 {
+        font-size: 1.5rem; 
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .bg-header {
+        height: 200px; 
+    }
+
+    .bg-header h1 {
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    
+    .news-letter > input[type="submit"] {
+        position: static; 
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
